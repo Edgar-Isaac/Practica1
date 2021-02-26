@@ -1,0 +1,47 @@
+<!-- <input type= "text" [(ngModel)]="title">-->
+
+<!--<div class=view>-->
+    <!--<h1>{{title}}</h1>-->
+   <!--<button (click)="Insertar()">Agregar canales</button>-->
+<!--</div>-->
+
+<!--<h2>{{suma}}</h2>-->
+<!--<input type= "text" [(ngModel)]="texto">
+<h4>{{resultado}}</h4>-->
+
+
+<!--<div *ngIf="canal === 'Control_Remoto'">
+    Se muestra correctamente
+</div>-->
+
+<router-outlet>
+
+</router-outlet>
+
+<div [ngSwitch]="canal">
+    <p *ngSwitchCase="'1'"> Canal de las estrellas </p>
+    <p *ngSwitchCase="'2'"> Canal 5 </p>
+    <p *ngSwitchCase="'3'"> Canal 9 </p>
+    <p *ngSwitchDefault> No hay coincidencias </p>
+</div>
+
+<app-producto> </app-producto>
+
+<div class=view>
+    <h3>{{canal}}</h3>
+   <button (click)="Insertar()">Agregar canales</button>
+</div> 
+
+<ul>
+    <li *ngIf="array.length === 0">No Hay Canales Guardados</li>
+    <li *ngFor="let item of array; index as i">
+        {{i+1}} {{':'}} {{item}}
+        <button (click)="Eliminar(i)">Borrar canales </button>
+    </li>
+</ul>
+
+<div *ngFor= "let producto of Object"> 
+    <h3> {{producto.title}} </h3>
+    <img [src] = "producto.imagen" >     
+</div>
+
