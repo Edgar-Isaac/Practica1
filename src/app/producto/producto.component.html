@@ -1,7 +1,7 @@
-<div>
-    <h1> {{Object.title}} </h1>
-    <h3>{{Object.descripcion}}</h3>
-    <img [src]="Object.imagen">
+<div *ngFor = 'let titulo of Object'>
+    <h1> {{titulo.title}} </h1>
+    <h3>{{titulo.descripcion}}</h3>
+    <img [src]="titulo.imagen">
     <!--<h3>{{Object.precio}}</h3>-->
 </div>
 

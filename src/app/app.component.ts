@@ -13,7 +13,9 @@ export class AppComponent {
 
   //resultado=5+6;
   //texto='El resultado de la suma es:'
-  
+}
+
+/*
   array=['Canal de las estrellas', 'Canal 5','Canal 9'];
 
   Object: producto[] =[
@@ -47,6 +49,6 @@ export class AppComponent {
   Eliminar(index:number){
     this.array.splice(index,1);
   }
-} 
+} */
 
 

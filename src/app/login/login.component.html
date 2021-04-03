@@ -1,12 +1,26 @@
-<form [formGroup]="optionsForm" (ngSubmit)="submit()">
-  <label >
-      Nombre:
-      <input type="text" formControlName="email">
-  </label>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.component.css">
+  <title>Document</title>
+</head>
+<body>
+  <form [formGroup]="optionsForm" (ngSubmit)="submit()">
+    <h1>Login</h1>
+    <label >
+        Nombre:
+        <input type="text" formControlName="email">
+    </label>
 
-  <label>
-      Contraseña:
-      <input type="text" formControlName="contraseña">
-  </label>
-  <button> boton </button>
-</form>
+    <label>
+        Contraseña:
+        <input type="text" formControlName="contraseña">
+    </label>
+    <button> Login </button>
+  </form>
+</body>
+</html>
+
